@@ -18,8 +18,8 @@ const app = express();
 
 PORT = 8888;
 
-const client_id = '193c9c355c29476982e0d1c5716cc462';
-const client_secret = 'a67e5eb29d8c46f8ae0f8a7c6d046aa4';
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
 const redirect_uri = 'http://localhost:8888/callback';
 
 /**
